@@ -1,0 +1,56 @@
+@import "./variable.scss";
+
+.router_container {
+    display: flex;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    height: 100vh;
+
+    .loading_spinner_div {
+        margin: auto;
+        @keyframes spinner {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          .loading-spinner {
+            width: 80px;
+            height: 80px;
+            border: 10px solid #f3f3f3; /* Light grey */
+            border-top: 10px solid $purple; /* Black */
+            border-radius: 50%;
+            animation: spinner 1.5s linear infinite;
+          }
+    }
+
+    .router_sidebar {
+        width: 17%;
+        min-height: 100vh;
+        // border: 0.5px solid rgb(230, 227, 227);
+        background-color: #361d32;
+        color: white;
+    }
+
+    .router_routes {
+        // padding: 0px 15px 0px 20px;
+        width: 83%;
+        background-color: #f6f7fb;
+    }
+}
+
+// @media (max-width: $breakpoint-xl-large) {
+//     .router_container {
+//         .router_sidebar {
+//             width: 22%;
+//         }
+//         .router_routes {
+//             width: 78%;
+//             background-color: #f6f7fb;
+//             padding: 0px 15px 0px 20px;
+//         }
+//     }
+// }

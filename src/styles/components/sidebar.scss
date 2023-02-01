@@ -1,0 +1,134 @@
+@import "../variable.scss";
+
+.sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .top {
+        margin-top: 3vh;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo {
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    .center {
+        width: 100%;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            margin-top: 20px;
+            padding: 0;
+            .link {
+                width: 75%;
+                margin-top: 8px;
+                padding: 9px 13px;
+                text-decoration: none;
+                font-size: 16px;
+                display: flex;
+                color: #9197b3;
+                cursor: pointer;
+                border-radius: 6px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 700;
+                }
+            }
+
+            .active {
+                // width: 100%;
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                background-color: #ece8ff;
+             
+                li {
+                    color: #361d32;
+                }
+            }
+
+            .sidebar_assignment_wrapper {
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .assignment_heading_wrapper {
+                    width: 100%;
+
+                    div {
+                        cursor: pointer;
+                        margin: 0px auto;
+                        padding: 8px;
+                        width: 75%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .assignment_heading_Up_Arrow {
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+
+                    .assignment_heading_down_Arrow {
+                        color: #9197b3;
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .assignment_link_wrapper {
+                    margin-left: 20px;
+                    width: 85%;
+                    .accordion_content {
+                        max-height: 0;
+                        overflow: hidden;
+
+                        h3 {
+                            cursor: pointer;
+                            font-size: 14px;
+                            padding-left: 10px;
+                            margin-top: 20px;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .accordion_content.show {
+                        max-height: 9999px;
+                        transition: max-height 3s ease-in-out 0s;
+
+                        .link {
+                            font-weight: 700;
+                          
+                        }
+
+                        .active {
+                            font-weight: 700;
+                            color: $purple;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

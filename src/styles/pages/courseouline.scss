@@ -1,0 +1,37 @@
+@import "../variable.scss";
+
+.courseOutline_wrapper {
+    height: 100vh;
+    .courseOutline_container {
+        height: 90vh;
+        padding-left: 15px;
+        width: 95%;
+
+        .courseOutline_course_wrapper {
+            padding-top: 10px;
+            div{
+                padding: 9px 13px;
+                background-color: $white;
+                display: flex;
+                
+          
+                .courseOutline_course_title {
+                    width: 50%;
+                }
+                .courseOutline_course_time {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 50%;
+                }
+            }
+            .courseOutline_course_header {
+                border-bottom: 2px solid rgba(202, 202, 202, 1);
+                font-weight: 600;
+            }
+            .courseOutline_course_detail {
+                background-color: $white;
+                font-weight: normal;
+            }
+        }
+    }
+}

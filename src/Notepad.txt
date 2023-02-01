@@ -1,0 +1,10 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+npm install react-router-dom
+npm install sass
+npm install react-icons --save
+
+
+
+Toggle divs without using Javascript  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+14)
+https://stackoverflow.com/questions/11023816/toggle-divs-without-using-javascript

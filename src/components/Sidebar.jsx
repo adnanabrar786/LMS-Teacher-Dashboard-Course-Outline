@@ -22,12 +22,12 @@ const Sidebar = () => {
             </div>
             <div className='center'>
                 <ul>
-                    <NavLink to="/courses/Course/Outline" className='link' activeclassname="active">
+                    <NavLink to="/coursesoutline/?title=Course Outline" className='link' activeclassname="active">
                         <li>
                             Course Outline
                         </li>
                     </NavLink>
-                    <NavLink to="/notes/Notes" className='link' activeclassname="active">
+                    <NavLink to="/notes/?notes=Notes" className='link' activeclassname="active">
                         <li>
                             Notes
                         </li>
@@ -49,10 +49,10 @@ const Sidebar = () => {
                                     ? "accordion_content show"
                                     : "accordion_content"
                             }>
-                                <NavLink to="/assignments/Assignments" className='link' activeclassname="active">
+                                <NavLink to="/assignments/?assignments=Assignments" className='link' activeclassname="active">
                                     Assignments
                                 </NavLink>
-                                <NavLink to="/assignment/Assignment/Submission" className='link' activeclassname="active">
+                                <NavLink to="/assignmentsubmission/?assignmentsubmission=Assignment Submisson" className='link' activeclassname="active">
                                     Assignment Submission
                                 </NavLink>
                             </div>
@@ -75,10 +75,10 @@ const Sidebar = () => {
                                     ? "accordion_content show"
                                     : "accordion_content"
                             }>
-                                <NavLink to="/quizzes/Quizzes" className='link' activeclassname="active">
+                                <NavLink to="/quizzes/?quizzes=Quizzes" className='link' activeclassname="active">
                                     Quizzes
                                 </NavLink>
-                                <NavLink to="/quizzsubmission/Quizz/Submission" className='link' activeclassname="active">
+                                <NavLink to="/quizzsubmission/?quizzsubmission=Quizz Submission" className='link' activeclassname="active">
                                     Quizz Submission
                                 </NavLink>
                             </div>
@@ -101,17 +101,17 @@ const Sidebar = () => {
                                     ? "accordion_content show"
                                     : "accordion_content"
                             }>
-                                <NavLink to="/papers/Papers" className='link accordion_content_link' activeclassname="active">
+                                <NavLink to="/papers/?paper=Papers" className='link accordion_content_link' activeclassname="active">
                                     Papers
                                 </NavLink>
-                                <NavLink to="/papersubmisson/Paper/Submisson" className='link' activeclassname="active">
+                                <NavLink to="/papersubmisson/?papersubmisson=Paper Submission" className='link' activeclassname="active">
                                     Paper Submission
                                 </NavLink>
                             </div>
                         </div>
                     </div>
 
-                    <NavLink to="/reportcard/Report/Card" className='link' activeclassname="active">
+                    <NavLink to="/reportcard/?reportCard=Report Card" className='link' activeclassname="active">
                         <li>
                             Report Card
                         </li>

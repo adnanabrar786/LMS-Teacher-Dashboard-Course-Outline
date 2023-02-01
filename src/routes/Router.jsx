@@ -11,7 +11,7 @@ import Quizzes from "../pages/quizzes/Quizzes";
 import Quizsubmission from "../pages/quizzes/Quizsubmission";
 import Papers from "../pages/papers/Papers";
 import Paperssubmisson from "../pages/papers/Paperssubmisson";
-import Check from "../pages/papers/Check";
+// import Check from "../pages/papers/Check";
 
 const Router = () => {
 
@@ -42,16 +42,16 @@ const Router = () => {
                         </div>
                         <div className='router_routes'>
                             <Routes>
-                                <Route path="/courses/:course/:outline" element={<Courseoutline />} />
-                                <Route path="/notes/:notes" element={<Notes />} />
-                                <Route path="/assignments/:assignments" element={<Assignment />} />
-                                <Route path="/assignment/:assignment/:submission" element={<Assignmentsubmission />} />
-                                <Route path="/quizzes/:quizzes" element={<Quizzes />} />
-                                <Route path="/quizzsubmission/:quizz/:submission" element={<Quizsubmission />} />
-                                <Route path="/papers/:papers" element={<Papers />} />
-                                <Route path="/papersubmisson/:paper/:submisson" element={<Paperssubmisson />} />
+                                <Route path="/coursesoutline" element={<Courseoutline />} />
+                                <Route path="/notes" element={<Notes />} />
+                                <Route path="/assignments" element={<Assignment />} />
+                                <Route path="/assignmentsubmission" element={<Assignmentsubmission />} />
+                                <Route path="/quizzes" element={<Quizzes />} />
+                                <Route path="/quizzsubmission" element={<Quizsubmission />} />
+                                <Route path="/papers/" element={<Papers />} />
+                                <Route path="/papersubmisson" element={<Paperssubmisson />} />
                                 {/* <Route path="/:papers/:Submisson/check" element={<Check />} /> */}
-                                <Route path="/reportcard/:report/:card" element={<Reportcard />} />
+                                <Route path="/reportcard" element={<Reportcard />} />
                             </Routes>
                         </div>
                     </BrowserRouter>

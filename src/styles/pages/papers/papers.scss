@@ -1,0 +1,11 @@
+@import "../../variable.scss";
+
+.papers_wrapper {
+    height: 100vh;
+
+    .papers_container {
+        height: 89vh;
+        padding-left: 15px;
+        width: 97%;
+    }
+}

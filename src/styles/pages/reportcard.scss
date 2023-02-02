@@ -1,0 +1,10 @@
+@import "../variable.scss";
+
+.reportCard_wrapper {
+    height: 100vh;
+    .reportCard_container {
+        height: 89vh;
+        padding-left: 15px;
+        width: 97%;
+    }
+}

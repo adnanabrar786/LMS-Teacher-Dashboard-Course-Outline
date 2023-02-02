@@ -1,0 +1,133 @@
+@import "../variable.scss";
+
+.notes_wrapper {
+    height: 100vh;
+    .notes_container {
+        height: 89vh;
+        padding-left: 15px;
+        width: 97%;
+
+        .notes_button_wrapper {
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                padding: 9px 13px;
+                font-weight: 500;
+                border: none;
+                background-color: $grey;
+                color: #6a6a6a;
+                // width: 100px;
+                height: 30px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .notes_print_btn {
+                margin-right: 10px;
+                background-color: $grey;
+                color: #6a6a6a;
+            }
+            .notes_add_btn {
+                background-color: #f44336;
+                color: #f6f7fb;
+            }
+        }
+
+        .notes_header_wrapper {
+            width: 97%;
+            width: 96.9%;
+            margin-top: 15px;
+            padding: 0px 13px;
+            height: 80px;
+            background-color: $purple;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                width: 19%;
+                color: $white;
+                text-align: center;
+            }
+        }
+
+        .notes_middle_wrapper {
+            border: 1px solid $grey;
+            height: 55vh;
+            overflow-y: scroll;
+            border-radius: 6px;
+
+            .notes_middle_one_div {
+                padding: 0px 13px;
+                height: 80px;
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $grey;
+
+                div {
+                    width: 19%;
+                    text-align: center;
+                }
+
+                .lecture_file {
+                    font-weight: 600;
+                }
+
+                .download_button_div {
+                    button {
+                        padding: 8px 20px;
+                        color: $white;
+                        background-color: $red;
+                        font-weight: 500;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                }
+
+                .video_link {
+                    cursor: pointer;
+                    font-weight: 600;
+                    color: $blue;
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: $blue;
+                    }
+                }
+
+                .action {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .three_dots_icon {
+                        cursor: pointer;
+                        font-size: 30px;
+                        color: $red;
+
+                        &:hover + .nav-sec-level {
+                         
+                        }
+                    }
+
+                    .side-bar:hover .nav-sec-level {
+                        display: block;
+                    }
+
+                    .edit_delete_div_wrapper {
+                        background: red;
+                        border: 1px solid #000;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

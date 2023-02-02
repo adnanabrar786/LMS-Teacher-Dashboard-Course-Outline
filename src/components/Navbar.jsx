@@ -8,6 +8,7 @@ import { useSearchParams } from 'react-router-dom';
 
 const Navbar = () => {
 
+  // const [searchParams, setSearchParams] = useSearchParams();
   const [searchParams] = useSearchParams();
 
   const coureOutline = searchParams.get('title');

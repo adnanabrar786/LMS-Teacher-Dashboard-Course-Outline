@@ -1,0 +1,111 @@
+@import "../../variable.scss";
+
+.assignment_wrapper {
+    height: 100vh;
+    .assignment_container {
+        height: 89vh;
+        padding-left: 15px;
+        width: 97%;
+
+        .assignment_button_wrapper {
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                padding: 9px 13px;
+                font-weight: 500;
+                border: none;
+                background-color: $grey;
+                color: #6a6a6a;
+                // width: 100px;
+                height: 30px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .assignment_print_btn {
+                margin-right: 10px;
+                background-color: $grey;
+                color: #6a6a6a;
+            }
+            .assignment_add_btn {
+                background-color: #f44336;
+                color: #f6f7fb;
+            }
+        }
+
+        .assignment_header_wrapper {
+            margin-top: 15px;
+            padding: 0px 13px;
+            height: 80px;
+            background-color: $purple;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                text-align: center;
+                width: 13.5%;
+                color: $white;
+            }
+        }
+
+        .assignment_middle_wrapper {
+            border-radius: 4px;
+            height: 55vh;
+            border: 1px solid $grey;
+            overflow-y: auto;
+            .assignment_middle_one_div {
+                padding: 5px 13px;
+                height: 80px;
+                // height: auto;
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $grey;
+
+                div {
+                    text-align: center;
+                    width: 13.5%;
+                }
+
+                .assignment_name {
+                    font-weight: 600;
+                }
+
+                .assignment_download_div {
+                    button {
+                        padding: 8px 20px;
+                        color: $white;
+                        background-color: $red;
+                        font-weight: 500;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                }
+
+                .assignment_submission_number {
+                    span {
+                        padding: 6px 12px;
+                        color: $white;
+                        background-color: $purple;
+                        border-radius: 4px;
+                    }
+                }
+
+                .assignment_total_marks {
+                    span {
+                        padding: 6px 12px;
+                        color: $white;
+                        background-color: $purple;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

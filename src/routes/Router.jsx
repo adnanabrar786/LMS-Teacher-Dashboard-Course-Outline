@@ -8,7 +8,7 @@ import Sidebar from '../components/Sidebar';
 import Assignment from "../pages/assignment/Assignment";
 import Assignmentsubmission from "../pages/assignment/Assignmentsubmission";
 import Quizzes from "../pages/quizzes/Quizzes";
-import Quizsubmission from "../pages/quizzes/Quizsubmission";
+import Quizsubmission from "../pages/quizzes/Quizzubmission";
 import Papers from "../pages/papers/Papers";
 import Paperssubmisson from "../pages/papers/Paperssubmisson";
 // import Check from "../pages/papers/Check";

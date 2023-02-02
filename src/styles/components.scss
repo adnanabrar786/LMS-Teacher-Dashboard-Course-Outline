@@ -1,0 +1,57 @@
+@import "./variable.scss";
+
+
+.courseOutline_course_wrapper {
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: $white;
+    div {
+        padding: 9px 13px;
+        display: flex;
+
+        .courseOutline_course_title {
+            width: 50%;
+        }
+        .courseOutline_course_time {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+    }
+    .courseOutline_course_header {
+        border-bottom: 1px solid rgba(202, 202, 202, 1);
+        font-weight: 600;
+    }
+    .courseOutline_course_detail {
+        // background-color: $white;
+        font-weight: normal;
+    }
+}
+
+// .coursedetails_button_wrapper {
+//     margin-top: 15px;
+//     display: flex;
+//     justify-content: flex-end;
+
+//     button {
+//         padding: 9px 13px;
+//         font-weight: 500;
+//         border: none;
+//         background-color: $grey;
+//         color: #6a6a6a;
+//         // width: 100px;
+//         height: 30px;
+//         border-radius: 4px;
+//         cursor: pointer;
+//     }
+
+//     .coursedetails_print_btn {
+//         margin-right: 10px;
+//         background-color: $grey;
+//         color: #6a6a6a;
+//     }
+//     .coursedetails_add_btn {
+//         background-color: #f44336;
+//         color: #f6f7fb;
+//     }
+// }

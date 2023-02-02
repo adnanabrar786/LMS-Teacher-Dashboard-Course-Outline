@@ -72,9 +72,6 @@ const Courseoutline = () => {
 
       </div>
 
-
-
-
     </div>
   )
 }

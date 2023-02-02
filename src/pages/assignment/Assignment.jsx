@@ -34,7 +34,6 @@ const Assignment = () => {
           <button className="assignment_add_btn">+ Add Content</button>
         </div>
 
-
         <div className="assignment_header_wrapper">
           <div>Assignment</div>
           <div>File</div>
@@ -51,13 +50,18 @@ const Assignment = () => {
             <div className="assignment_name">Assignment</div>
             <div className="assignment_download_div"> <button>Download</button></div>
             <div className="assignment_submission_number"><span>20</span></div>
-            <div className="assignment_solution">Solution</div>
-            <div className="assignment_remarks">Remarks</div>
+            <div className="assignment_solution">Add Solution</div>
+            <div className="assignment_hover_view"><span>Hover to View</span></div>
             <div className="assignment_total_marks"><span>20</span></div>
             <div className="assignment_dadline">Deadline</div>
-            <div className="assignment_action">Action</div>
+            <div className="assignment_action_red_circle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
+
 
       </div>
 

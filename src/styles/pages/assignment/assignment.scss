@@ -44,10 +44,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-right: 15px;
+            // overflow-y: scroll;
 
             div {
                 text-align: center;
-                width: 13.5%;
+                width: 13%;
                 color: $white;
             }
         }
@@ -56,7 +58,7 @@
             border-radius: 4px;
             height: 55vh;
             border: 1px solid $grey;
-            overflow-y: auto;
+            overflow-y: scroll;
             .assignment_middle_one_div {
                 padding: 5px 13px;
                 height: 80px;
@@ -69,7 +71,7 @@
 
                 div {
                     text-align: center;
-                    width: 13.5%;
+                    width: 13%;
                 }
 
                 .assignment_name {
@@ -97,6 +99,22 @@
                     }
                 }
 
+                .assignment_solution {
+                    color: $blue;
+                }
+
+                .assignment_hover_view {
+                    span {
+                        padding:8px 3px;
+                        font-size: 14px;
+                        color: rgba(106, 106, 106, 1);
+                        background-color: rgba(202, 202, 202, 1);
+                        font-weight: 500;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                }
+
                 .assignment_total_marks {
                     span {
                         padding: 6px 12px;
@@ -105,7 +123,35 @@
                         border-radius: 4px;
                     }
                 }
+                .assignment_action_red_circle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    span {
+                        margin: 0px 1.5px;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background-color: $red;
+                    }
+                }
             }
         }
     }
 }
+
+// @media (max-width: $breakpoint-xl-large) {
+//     .assignment_wrapper {
+//         .assignment_container {
+//             .assignment_middle_wrapper {
+//                 .assignment_middle_one_div {
+//                     .assignment_hover_view {
+//                         span {
+//                             padding:8px 3px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

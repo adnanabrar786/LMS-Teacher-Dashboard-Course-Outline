@@ -1,0 +1,117 @@
+@import "../../variable.scss";
+
+.reportCard_wrapper {
+    height: 100vh;
+    .reportCard_container {
+        height: 89vh;
+        padding-left: 15px;
+        width: 97%;
+
+        .reportCard_button_wrapper {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                padding: 9px 13px;
+                font-weight: 500;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                background-color: #f44336;
+                .reportCard_link{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+
+            select {
+                padding: 3px;
+                outline: none;
+                border: 1px solid #878787;
+                border-radius: 6px;
+                color: rgb(72, 70, 70);
+            }
+        }
+
+        .reportCard_header_wrapper {
+            margin-top: 15px;
+            padding: 0px 13px;
+            height: 80px;
+            background-color: $purple;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 15px;
+            // overflow-y: scroll;
+
+            div {
+                text-align: center;
+                width: 13%;
+                color: $white;
+            }
+        }
+
+        .reportCard_middle_wrapper {
+            border-radius: 4px;
+            height: 55vh;
+            border: 1px solid $grey;
+            overflow-y: scroll;
+            .reportCard_middle_one_div {
+                padding: 5px 13px;
+                height: 80px;
+                // height: auto;
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $grey;
+
+                div {
+                    text-align: center;
+                    width: 13%;
+                }
+
+                .reportCard_id {
+                    font-weight: 600;
+                }
+                .reportCard_total_marks {
+                    span {
+                        padding: 5px 8px;
+                        color: $white;
+                        background-color: $purple;
+                        border-radius: 4px;
+                    }
+                }
+
+                .reportCard_marked_on {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        margin: 3px 0px;
+                        font-size: 14px;
+                        color: rgba(106, 106, 106, 1);
+                    }
+                }
+
+                .reportCard_edit {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .icon {
+                        cursor: pointer;
+                        font-size: 20px;
+                        margin-right: 8px;
+                        color: $blue;
+                    }
+                    span {
+                        cursor: pointer;
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

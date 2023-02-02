@@ -37,7 +37,6 @@ const Navbar = () => {
     <>
       <nav>
         <div>
-
           <span className='heading'>
             {coureOutline} {notes} {assignments} {assignmentSubmission} {quizzes} {quizzSubmission}
             {reportCard} {paper} {papersubmisson}
@@ -63,4 +62,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

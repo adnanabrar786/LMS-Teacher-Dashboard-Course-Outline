@@ -7,5 +7,123 @@
         height: 89vh;
         padding-left: 15px;
         width: 97%;
+        // .quizz_submisson_button_wrapper {
+        //     margin-top: 15px;
+        //     display: flex;
+        //     justify-content: space-between;
+
+        //     button {
+        //         padding: 9px 13px;
+        //         font-weight: 500;
+        //         border: none;
+        //         background-color: $grey;
+        //         color: #6a6a6a;
+        //         border-radius: 4px;
+        //         cursor: pointer;
+        //         background-color: #f44336;
+        //         color: #f6f7fb;
+        //     }
+
+        //     select {
+        //         padding: 3px;
+        //         outline: none;
+        //         border: 1px solid #878787;
+        //         border-radius: 6px;
+        //         color: rgb(72, 70, 70);
+        //     }
+        // }
+
+        // .quizz_submisson_header_wrapper {
+        //     margin-right: 15px;
+        //     margin-top: 15px;
+        //     padding: 0px 13px;
+        //     height: 80px;
+        //     background-color: $purple;
+        //     border-radius: 4px;
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+
+        //     div {
+        //         text-align: center;
+        //         width: 15%;
+        //         color: $white;
+        //     }
+        // }
+
+        // .quizz_submisson_middle_wrapper {
+        //     border-radius: 4px;
+        //     height: 55vh;
+        //     border: 1px solid $grey;
+        //     overflow-y: scroll;
+        //     .quizz_submisson_middle_one_div {
+        //         padding: 5px 13px;
+        //         height: 80px;
+        //         // height: auto;
+        //         border-radius: 4px;
+        //         display: flex;
+        //         justify-content: space-between;
+        //         align-items: center;
+        //         border-bottom: 1px solid $grey;
+
+        //         div {
+        //             text-align: center;
+        //             width: 15%;
+        //         }
+
+        //         .quizz_submisson__id {
+        //             font-weight: 600;
+        //         }
+        //         .quizz_submisson__name {
+        //             font-weight: 600;
+        //         }
+
+        //         .quizz_submisson_annootate_div {
+        //             button {
+        //                 padding: 9px 20px;
+        //                 color: $white;
+        //                 background-color: $red;
+        //                 font-weight: 500;
+        //                 border: none;
+        //                 border-radius: 4px;
+        //                 cursor: pointer;
+        //             }
+        //         }
+
+        //         .quizz_submisson_marked {
+        //             button {
+        //                 padding: 9px 9px;
+        //                 color: $white;
+        //                 background-color: $green;
+        //                 font-weight: 500;
+        //                 border: none;
+        //                 border-radius: 4px;
+        //                 cursor: pointer;
+        //             }
+        //         }
+
+        //         .quizz_submisson_not_marked {
+        //             button {
+        //                 padding: 9px 12px;
+        //                 color: $white;
+        //                 background-color: rgba(145, 151, 179, 1);
+        //                 font-weight: 500;
+        //                 border: none;
+        //                 border-radius: 4px;
+        //                 cursor: pointer;
+        //             }
+        //         }
+
+        //         .quizz_submisson__submitted {
+        //             display: flex;
+        //             flex-direction: column;
+        //             span {
+        //                 margin: 3px 0px;
+        //                 font-size: 14px;
+        //                 color: rgba(106, 106, 106, 1);
+        //             }
+        //         }
+        //     }
+        // }
     }
 }

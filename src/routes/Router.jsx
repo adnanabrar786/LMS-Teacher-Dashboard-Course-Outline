@@ -12,7 +12,7 @@ import Quizsubmission from "../pages/quizzes/Quizzubmission";
 import Papers from "../pages/papers/Papers";
 import Paperssubmisson from "../pages/papers/Paperssubmisson";
 import Reportcartgenerated from '../pages/reportcard/Reportcartgenerated';
-// import Check from "../pages/papers/Check";
+import Checking from '../pages/Checking';
 
 const Router = () => {
 
@@ -51,9 +51,9 @@ const Router = () => {
                                 <Route path="/quizzsubmission" element={<Quizsubmission />} />
                                 <Route path="/papers/" element={<Papers />} />
                                 <Route path="/papersubmisson" element={<Paperssubmisson />} />
-                                {/* <Route path="/:papers/:Submisson/check" element={<Check />} /> */}
                                 <Route path="/reportcard" element={<Reportcard />} />
                                 <Route path="/report/generate" element={<Reportcartgenerated />} />
+                                <Route path="/checking" element={<Checking />} />
                             </Routes>
                         </div>
                     </BrowserRouter>

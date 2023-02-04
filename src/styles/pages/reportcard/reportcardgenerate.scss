@@ -1,10 +1,196 @@
 @import "../../variable.scss";
 
-.reportCard_wrapper {
+.reportCardGenerated_wrapper {
     height: 100vh;
-    .reportCard_container {
+    .reportCardGenerated_container {
         height: 89vh;
         padding-left: 15px;
         width: 97%;
+
+        .reportCardGenerated_details_wrapper {
+            margin-top: 15px;
+            padding: 5px 10px 10px 10px;
+            height: auto;
+            background-color: $white;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            .reportCardGenerated_details_left_wrapper {
+                div {
+                    margin-top: 10px;
+                    .reportCardGenerated_details_left_bold {
+                        font-weight: 600;
+                    }
+                    .reportCardGenerated_details_left_light {
+                        margin-left: 10px;
+                        font-size: 14.5px;
+                        color: rgba(106, 106, 106, 1);
+                    }
+                }
+            }
+            .reportCardGenerated_details_right_wrapper {
+                div {
+                    margin-top: 10px;
+                    .reportCardGenerated_right_bold {
+                        font-weight: 600;
+                        margin-right: 10px;
+                    }
+                    .reportCardGenerated_right_light {
+                        font-size: 14.5px;
+                        color: rgba(106, 106, 106, 1);
+                    }
+                }
+            }
+        }
+
+        .reportCardGenerated_button_wrapper {
+            margin-top: 15px;
+            height: 16vh;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            button {
+                cursor: pointer;
+                margin-left: 10px;
+                color: $white;
+                border: none;
+                outline: none;
+                border-radius: 4px;
+                padding: 9px 50px;
+                height: 40px;
+                margin-top: 5px;
+            }
+            .reportCardGenerated_btn_green {
+                background-color: $green;
+            }
+            .reportCardGenerated_btn_purple {
+                background-color: $purple;
+            }
+            .reportCardGenerated_btn_skyblue {
+                background-color: rgba(105, 168, 201, 1);
+            }
+            .reportCardGenerated_btn_grey {
+                color: black;
+                background-color: #cacaca;
+            }
+            .reportCardGenerated_btn_red {
+                background-color: $red;
+            }
+        }
+
+        .reportCardGenerated_header_wrapper {
+            margin-right: 18px;
+            margin-top: 15px;
+            padding: 0px 13px;
+            height: 80px;
+            background-color: $purple;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                color: $white;
+                width: 12%;
+            }
+            // align-items: center;
+
+            .reportCardGenerated_header_div {
+                // background-color: aqua;
+                height: 80px;
+                height: auto;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .reportCardGenerated_header_assignment_wrapper {
+                border: 1px solid $grey;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 80px;
+                height: auto;
+                text-align: center;
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 50%;
+                    text-align: center;
+                    justify-content: center;
+                    .reportCardGenerated_header__span {
+                        text-align: center;
+                        width: 50%;
+                        border: 1px solid $grey;
+                    }
+                }
+                .reportCardGenerated_header_heading {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .reportCardGenerated_header_quiz_wrapper {
+                border: 1px solid $grey;
+            }
+
+            .reportCardGenerated_action_wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 80px;
+                height: auto;
+                text-align: center;
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .reportCardGenerated_action___icon {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .reportCardGenerated_middle_wrapper {
+            height: 40vh;
+            overflow-y: scroll;
+            border: 1px solid $grey;
+
+            .reportCardGenerated_middle_one_div {
+                padding: 0px 13px;
+                height: 50px;
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid $grey;
+                div {
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 12%;
+                    font-weight: 600;
+
+                    span {
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                        border: 1px solid $grey;
+                        background-color: rgba(211, 244, 250, 1);
+                    }
+
+                    .reportCardGenerated_action_icon {
+                        color: $red;
+                        margin-right: 5px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
 }

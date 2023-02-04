@@ -7,136 +7,189 @@
         padding-left: 15px;
         width: 97%;
 
-        .assignment_button_wrapper {
-            margin-top: 15px;
-            display: flex;
-            justify-content: flex-end;
+        // .assignment_button_wrapper {
+        //     margin-top: 15px;
+        //     display: flex;
+        //     justify-content: flex-end;
 
-            button {
-                padding: 9px 13px;
-                font-weight: 500;
-                border: none;
-                background-color: $grey;
-                color: #6a6a6a;
-                // width: 100px;
-                height: 30px;
-                border-radius: 4px;
-                cursor: pointer;
-            }
+        //     button {
+        //         padding: 9px 13px;
+        //         font-weight: 500;
+        //         border: none;
+        //         background-color: $grey;
+        //         color: #6a6a6a;
+        //         // width: 100px;
+        //         height: 30px;
+        //         border-radius: 4px;
+        //         cursor: pointer;
+        //     }
 
-            .assignment_print_btn {
-                margin-right: 10px;
-                background-color: $grey;
-                color: #6a6a6a;
-            }
-            .assignment_add_btn {
-                background-color: #f44336;
-                color: #f6f7fb;
-            }
-        }
+        //     .assignment_print_btn {
+        //         margin-right: 10px;
+        //         background-color: $grey;
+        //         color: #6a6a6a;
+        //     }
+        //     .assignment_add_btn {
+        //         background-color: #f44336;
+        //         color: #f6f7fb;
+        //     }
+        // }
 
-        .assignment_header_wrapper {
-            margin-top: 15px;
-            padding: 0px 13px;
-            height: 80px;
-            background-color: $purple;
-            border-radius: 4px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-right: 15px;
-            // overflow-y: scroll;
+        // .assignment_header_wrapper {
+        //     margin-top: 15px;
+        //     padding: 0px 13px;
+        //     height: 80px;
+        //     background-color: $purple;
+        //     border-radius: 4px;
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     margin-right: 15px;
+        //     // overflow-y: scroll;
 
-            div {
-                text-align: center;
-                width: 13%;
-                color: $white;
-            }
-        }
+        //     div {
+        //         text-align: center;
+        //         width: 13%;
+        //         color: $white;
+        //     }
+        // }
 
-        .assignment_middle_wrapper {
-            border-radius: 4px;
-            height: 55vh;
-            border: 1px solid $grey;
-            overflow-y: scroll;
-            .assignment_middle_one_div {
-                padding: 5px 13px;
-                height: 80px;
-                // height: auto;
-                border-radius: 4px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                border-bottom: 1px solid $grey;
+        // .assignment_middle_wrapper {
+        //     border-radius: 4px;
+        //     height: 55vh;
+        //     border: 1px solid $grey;
+        //     overflow-y: scroll;
+        //     .assignment_middle_one_div {
+        //         padding: 5px 13px;
+        //         height: 80px;
+        //         // height: auto;
+        //         border-radius: 4px;
+        //         display: flex;
+        //         justify-content: space-between;
+        //         align-items: center;
+        //         border-bottom: 1px solid $grey;
 
-                div {
-                    text-align: center;
-                    width: 13%;
-                }
+        //         div {
+        //             text-align: center;
+        //             width: 13%;
+        //         }
 
-                .assignment_name {
-                    font-weight: 600;
-                }
+        //         .assignment_name {
+        //             font-weight: 600;
+        //         }
 
-                .assignment_download_div {
-                    button {
-                        padding: 8px 20px;
-                        color: $white;
-                        background-color: $red;
-                        font-weight: 500;
-                        border: none;
-                        border-radius: 4px;
-                        cursor: pointer;
-                    }
-                }
+        //         .assignment_download_div {
+        //             button {
+        //                 padding: 8px 20px;
+        //                 color: $white;
+        //                 background-color: $red;
+        //                 font-weight: 500;
+        //                 border: none;
+        //                 border-radius: 4px;
+        //                 cursor: pointer;
+        //             }
+        //         }
 
-                .assignment_submission_number {
-                    span {
-                        padding: 6px 12px;
-                        color: $white;
-                        background-color: $purple;
-                        border-radius: 4px;
-                    }
-                }
+        //         .assignment_submission_number {
+        //             span {
+        //                 padding: 6px 12px;
+        //                 color: $white;
+        //                 background-color: $purple;
+        //                 border-radius: 4px;
+        //             }
+        //         }
 
-                .assignment_solution {
-                    color: $blue;
-                }
+        //         .assignment_solution {
+        //             color: $blue;
 
-                .assignment_hover_view {
-                    span {
-                        padding:8px 3px;
-                        font-size: 14px;
-                        color: rgba(106, 106, 106, 1);
-                        background-color: rgba(202, 202, 202, 1);
-                        font-weight: 500;
-                        border-radius: 4px;
-                        cursor: pointer;
-                    }
-                }
+        //             .inputfile {
+        //                 width: 0.1px;
+        //                 height: 0.1px;
+        //                 opacity: 0;
+        //                 overflow: hidden;
+        //                 position: absolute;
+        //                 z-index: -1;
+        //             }
+        //             .inputfile + label {
+        //                 padding: 5px 5px;
+        //                 font-size: 14px;
+        //                 font-weight: 700;
+        //                 color: white;
+        //                 background-color: $blue;
+        //                 display: inline-block;
+        //                 border-radius: 4px;
+        //             }
 
-                .assignment_total_marks {
-                    span {
-                        padding: 6px 12px;
-                        color: $white;
-                        background-color: $purple;
-                        border-radius: 4px;
-                    }
-                }
-                .assignment_action_red_circle {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    span {
-                        margin: 0px 1.5px;
-                        width: 8px;
-                        height: 8px;
-                        border-radius: 50%;
-                        background-color: $red;
-                    }
-                }
-            }
-        }
+        //             // .inputfile:focus + label,
+        //             // .inputfile + label:hover {
+        //             //     cursor: pointer;
+        //             //     background-color: $green;
+        //             // }
+
+        //             .inputfile + label:hover {
+        //                 cursor: pointer;
+        //                 background-color: $blue;
+        //             }
+        //             .inputfile:focus + label {
+        //                 cursor: pointer;
+        //                 background-color: $green;
+        //             }
+        //         }
+
+        //         .assignment_hover_view {
+        //             span {
+        //                 padding: 8px 2px;
+        //                 font-size: 14px;
+        //                 color: rgba(106, 106, 106, 1);
+        //                 background-color: rgba(202, 202, 202, 1);
+        //                 font-weight: 500;
+        //                 border-radius: 4px;
+        //                 cursor: pointer;
+        //             }
+        //         }
+
+        //         .assignment_total_marks {
+        //             span {
+        //                 padding: 6px 12px;
+        //                 color: $white;
+        //                 background-color: $purple;
+        //                 border-radius: 4px;
+        //             }
+        //         }
+        //         .assignment_deadline {
+        //             display: flex;
+        //             flex-direction: column;
+        //             span {
+        //                 font-size: 15px;
+        //                 font-weight: 600;
+        //                 color: $blue;
+        //             }
+        //             input {
+        //                 padding: 5px 8px;
+        //                 margin-top: 5px;
+        //                 color: $white;
+        //                 background-color: $red;
+        //                 border: none;
+        //                 outline: none;
+        //                 border-radius: 4px;
+        //                 cursor: pointer;
+        //             }
+        //         }
+
+        //         .assignment_action_red_circle {
+        //             display: flex;
+        //             align-items: center;
+        //             justify-content: center;
+        //             span {
+        //                 margin: 0px 1.5px;
+        //                 width: 8px;
+        //                 height: 8px;
+        //                 border-radius: 50%;
+        //                 background-color: $red;
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
 

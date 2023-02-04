@@ -31,7 +31,7 @@ const Paperssubmisson = () => {
 
         <div className="assignment_submisson_button_wrapper">
           <select>
-            <option>Select Assignment</option>
+            <option>Select Paper</option>
             <option>Physics</option>
             <option>Maths</option>
           </select>

@@ -1,12 +1,9 @@
 @import "../../variable.scss";
 
 .reportCardGenerated_wrapper {
-    height: 100vh;
-    .reportCardGenerated_container {
-        height: 89vh;
-        padding-left: 15px;
-        width: 97%;
-
+    height: 89vh;
+    padding-left: 15px;
+    width: 97%;
         .reportCardGenerated_details_wrapper {
             margin-top: 15px;
             padding: 5px 10px 10px 10px;
@@ -192,5 +189,4 @@
                 }
             }
         }
-    }
 }

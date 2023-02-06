@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
 import "../../styles/pages/quizzes/quizzsubmission.scss";
 import "../../styles/components.scss";
 import "../../styles/submission.scss";
@@ -7,10 +6,6 @@ import "../../styles/submission.scss";
 const Quizzubmission = () => {
   return (
     <div className='quizzsubmission_wrapper'>
-      <div>
-        <Navbar />
-      </div>
-      <div className='quizzsubmission_container'>
         <div className='courseOutline_course_wrapper'>
           <div className='courseOutline_course_header'>
             <div className='courseOutline_course_title'>Course title</div>
@@ -88,9 +83,6 @@ const Quizzubmission = () => {
             </div>
           </div>
         </div> */}
-
-
-      </div>
     </div>
   )
 }

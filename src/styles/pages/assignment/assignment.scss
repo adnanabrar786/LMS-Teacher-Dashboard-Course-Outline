@@ -1,12 +1,9 @@
 @import "../../variable.scss";
 
 .assignment_wrapper {
-    height: 100vh;
-    .assignment_container {
-        height: 89vh;
-        padding-left: 15px;
-        width: 97%;
-
+    height: 89vh;
+    padding-left: 15px;
+    width: 97%;
         // .assignment_button_wrapper {
         //     margin-top: 15px;
         //     display: flex;
@@ -191,7 +188,7 @@
         //     }
         // }
     }
-}
+
 
 // @media (max-width: $breakpoint-xl-large) {
 //     .assignment_wrapper {

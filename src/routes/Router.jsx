@@ -13,6 +13,7 @@ import Papers from "../pages/papers/Papers";
 import Paperssubmisson from "../pages/papers/Paperssubmisson";
 import Reportcartgenerated from '../pages/reportcard/Reportcartgenerated';
 import Checking from '../pages/Checking';
+import Navbar from '../components/Navbar';
 
 const Router = () => {
 
@@ -42,6 +43,7 @@ const Router = () => {
                             <Sidebar />
                         </div>
                         <div className='router_routes'>
+                            <Navbar />
                             <Routes>
                                 <Route path="/coursesoutline" element={<Courseoutline />} />
                                 <Route path="/notes" element={<Notes />} />
@@ -58,7 +60,6 @@ const Router = () => {
                         </div>
                     </BrowserRouter>
             }
-
         </div>
 
     )

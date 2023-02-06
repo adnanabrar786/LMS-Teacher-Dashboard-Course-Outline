@@ -1,16 +1,10 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
 import "../../styles/pages/reportcard/reportcardgenerate.scss";
 import { FaLock } from 'react-icons/fa';
 
 const Reportcartgenerated = () => {
     return (
         <div className='reportCardGenerated_wrapper'>
-            <div>
-                <Navbar />
-            </div>
-
-            <div className='reportCardGenerated_container'>
                 <div className='reportCardGenerated_details_wrapper'>
                     <div className='reportCardGenerated_details_left_wrapper'>
                         <div>
@@ -272,7 +266,6 @@ const Reportcartgenerated = () => {
                         <div><FaLock className="reportCardGenerated_action_icon" /> Lock</div>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }

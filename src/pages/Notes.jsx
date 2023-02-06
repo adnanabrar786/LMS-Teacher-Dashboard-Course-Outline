@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import "../styles/pages/notes.scss";
 import "../styles/components.scss";
 import { BsThreeDots } from 'react-icons/bs';
@@ -9,11 +8,6 @@ import { AiTwotoneDelete } from 'react-icons/ai';
 const Notes = () => {
   return (
     <div className="notes_wrapper">
-      <div>
-        <Navbar />
-      </div>
-
-      <div className='notes_container'>
         <div className='courseOutline_course_wrapper'>
           <div className='courseOutline_course_header'>
             <div className='courseOutline_course_title'>Course title</div>
@@ -54,7 +48,7 @@ const Notes = () => {
             <div className="action">
               <BsThreeDots className="three_dots_icon" />
               <div className="edit_delete_div_wrapper">
-                <div> <TbEdit className="edit_icon"/><span>Edit</span></div>
+                <div> <TbEdit className="edit_icon" /><span>Edit</span></div>
                 <div><AiTwotoneDelete className="delete_icon" /> <span>Delete</span></div>
               </div>
             </div>
@@ -66,8 +60,6 @@ const Notes = () => {
 
 
         </div>
-
-      </div>
     </div>
   )
 }

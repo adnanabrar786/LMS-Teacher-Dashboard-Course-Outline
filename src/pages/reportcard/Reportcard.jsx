@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
 import "../../styles/pages/reportcard/reportcard.scss";
 import "../../styles/components.scss";
 import { TbEdit } from 'react-icons/tb';
@@ -8,11 +7,6 @@ import { Link } from 'react-router-dom';
 const Reportcard = () => {
   return (
     <div className='reportCard_wrapper'>
-      <div>
-        <Navbar />
-      </div>
-
-      <div className='reportCard_container'>
         <div className='courseOutline_course_wrapper'>
           <div className='courseOutline_course_header'>
             <div className='courseOutline_course_title'>Course title</div>
@@ -70,10 +64,6 @@ const Reportcard = () => {
             </div>
           </div>
         </div>
-
-      </div>
-
-
     </div>
   )
 }

@@ -44,7 +44,7 @@
         }
 
         .reportCardGenerated_button_wrapper {
-            margin-top: 15px;
+            margin-top: 5px;
             height: 16vh;
             display: flex;
             justify-content: flex-start;
@@ -80,7 +80,7 @@
 
         .reportCardGenerated_header_wrapper {
             margin-right: 18px;
-            margin-top: 15px;
+            margin-top: 20px;
             padding: 0px 13px;
             height: 80px;
             background-color: $purple;
@@ -155,7 +155,7 @@
         }
 
         .reportCardGenerated_middle_wrapper {
-            height: 40vh;
+            height: 38vh;
             overflow-y: scroll;
             border: 1px solid $grey;
 

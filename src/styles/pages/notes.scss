@@ -61,8 +61,8 @@
             border-radius: 6px;
 
             .notes_middle_one_div {
-                padding: 0px 13px;
-                height: 80px;
+                padding: 10px 13px;
+                height: auto;
                 border-radius: 4px;
                 display: flex;
                 justify-content: space-between;
@@ -99,6 +99,9 @@
                         text-decoration-color: $blue;
                     }
                 }
+                // .reference {
+                //     padding: 5px 3px;
+                // }
 
                 .action {
                     position: relative;
@@ -112,9 +115,8 @@
                         font-size: 30px;
                         color: $red;
 
-                        &:hover + .nav-sec-level {
-                         
-                        }
+                        // &:hover + .nav-sec-level {
+                        // }
                     }
 
                     .side-bar:hover .nav-sec-level {

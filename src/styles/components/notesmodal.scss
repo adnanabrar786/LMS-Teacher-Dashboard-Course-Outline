@@ -1,0 +1,179 @@
+@import "../variable.scss";
+
+.nodemodal_modal_background_Shadow {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200);
+    position: fixed;
+    left: 0%;
+    z-index: 50;
+    top: 0;
+    opacity: 0.3;
+}
+
+.nodemodal_modalBackground {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 0%;
+    z-index: 100;
+    top: 0;
+
+    .nodemodal_modalContainer {
+        position: fixed;
+        top: 8vh;
+        width: 35%;
+        max-width: 850px;
+        height: 70vh;
+        background-color: white;
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+
+        .nodemodal_modal_header {
+            padding: 5px 0px 5px 20px;
+            border-bottom: 1px solid $grey;
+            .heading {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+        .nodemodal_modal_detail {
+            margin-top: 10px;
+            .nodemodal_input_wrapper {
+                margin-top: 3vh;
+                display: flex;
+                width: 95%;
+                padding-left: 10px;
+                .nodemodal_input_name {
+                    text-align: center;
+                    width: 25%;
+                    font-weight: 600;
+                }
+                .nodemodal_input_div {
+                    margin-left: 1%;
+                    width: 74%;
+                    input {
+                        padding: 10px 8px;
+                        width: 80%;
+                        border: 1px solid $grey;
+                        outline: none;
+                        border-radius: 6px;
+                    }
+                }
+            }
+
+            .nodemodal_image_wrapper {
+                margin-top: 3vh;
+                display: flex;
+                width: 95%;
+                padding-left: 10px;
+                .nodemodal_image_name {
+                    text-align: center;
+                    width: 25%;
+                    font-weight: 600;
+                    // span {
+                    //     font-size: 12px;
+                    // }
+                }
+                .nodemodal_image_div {
+                    margin-left: 1%;
+                    width: 74%;
+                    input {
+                        background-color: #cacaca;
+                        color: #ededed;
+
+                        background-color: #ededed;
+                        color: #918787;
+                        padding: 10px 8px;
+                        width: 80%;
+                        border: 1px solid $grey;
+                        outline: none;
+                        border-radius: 6px;
+                    }
+                }
+            }
+
+            .upload_image_button_div {
+                margin-top: 3vh;
+                input {
+                    margin-left: 26%;
+                    width: 74%;
+                }
+            }
+
+            .nodemodal_text_area_wrapper {
+                margin-top: 3vh;
+                display: flex;
+                width: 95%;
+                padding-left: 10px;
+                .nodemodal_input_name {
+                    text-align: center;
+                    width: 25%;
+                    font-weight: 600;
+                }
+                .nodemodal_input_div {
+                    margin-left: 1%;
+                    width: 74%;
+                    textarea {
+                        padding: 10px 8px;
+                        width: 80%;
+                        height: 80px;
+                        border: 1px solid $grey;
+                        outline: none;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+
+        .nodemodal_bottom_button_wrapper {
+            margin-top: 7vh;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                margin-right: 10px;
+                font-weight: 500;
+                border: none;
+                background-color: $grey;
+                color: #6a6a6a;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .nodemodal_cancel_btn {
+                padding: 7px 10px;
+                background-color: $grey;
+                color: #6a6a6a;
+            }
+            .nodemodal_save_btn {
+                padding: 9px 12px;
+                background-color: #f44336;
+                color: #f6f7fb;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .nodemodal_modalBackground {
+        .nodemodal_modalContainer {
+            width: 80%;
+            // height: 78vh;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .nodemodal_modalBackground {
+        .nodemodal_modalContainer {
+            width: 90%;
+        }
+    }
+}

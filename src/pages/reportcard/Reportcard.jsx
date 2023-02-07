@@ -7,63 +7,65 @@ import { Link } from 'react-router-dom';
 const Reportcard = () => {
   return (
     <div className='reportCard_wrapper'>
-        <div className='courseOutline_course_wrapper'>
-          <div className='courseOutline_course_header'>
-            <div className='courseOutline_course_title'>Course title</div>
-            <div className='courseOutline_course_time'>
-              <span>Time</span>
-              <span>Teacher</span>
-            </div>
-          </div>
-          <div className='courseOutline_course_detail'>
-            <div className='courseOutline_course_title'>Course title</div>
-            <div className='courseOutline_course_time'>
-              <span>Time</span>
-              <span>Teacher</span>
-            </div>
+      <div className='courseOutline_course_wrapper'>
+        <div className='courseOutline_course_header'>
+          <div className='courseOutline_course_title'>Course title</div>
+          <div className='courseOutline_course_time'>
+            <span>Time</span>
+            <span>Teacher</span>
           </div>
         </div>
+        <div className='courseOutline_course_detail'>
+          <div className='courseOutline_course_title'>Course title</div>
+          <div className='courseOutline_course_time'>
+            <span>Time</span>
+            <span>Teacher</span>
+          </div>
+        </div>
+      </div>
 
-        <div className="reportCard_button_wrapper">
-          <select>
-            <option>Mid Term</option>
-            <option>Final Term</option>
-            <option>Monthly</option>
-          </select>
+      <div className="reportCard_button_wrapper">
+        <select>
+          <option>Mid Term</option>
+          <option>Final Term</option>
+          <option>Monthly</option>
+        </select>
+        <Link to="/report/generate/?title=Generate Report Card" className="reportCard_link">
           <button>
-            <Link to="/report/generate/?title=Generate Report Card" className="reportCard_link">Generate Report Card</Link>
+            Generate Report Card
           </button>
-        </div>
+        </Link>
+      </div>
 
-        <div className="reportCard_header_wrapper">
-          <div>Student Id</div>
-          <div>Name</div>
-          <div>Total Marks</div>
-          <div>Obtained marks</div>
-          <div>Marked On</div>
-          <div>Action</div>
-        </div>
+      <div className="reportCard_header_wrapper">
+        <div>Student Id</div>
+        <div>Name</div>
+        <div>Total Marks</div>
+        <div>Obtained marks</div>
+        <div>Marked On</div>
+        <div>Action</div>
+      </div>
 
-        <div className="reportCard_middle_wrapper">
-          <div className="reportCard_middle_one_div">
-            <div className="reportCard_id">01</div>
-            <div className="reportCard_id">Name</div>
-            <div className="reportCard_total_marks"><span>30</span></div>
-            <div className="reportCard_total_marks"><span>15</span></div>
-            <div className="reportCard_marked_on">
-              <span>28-09-2022</span>
-              <span>7:45:24 Pm</span>
-            </div>
-            <div className="reportCard_edit">
-              {/* <span>
+      <div className="reportCard_middle_wrapper">
+        <div className="reportCard_middle_one_div">
+          <div className="reportCard_id">01</div>
+          <div className="reportCard_id">Name</div>
+          <div className="reportCard_total_marks"><span>30</span></div>
+          <div className="reportCard_total_marks"><span>15</span></div>
+          <div className="reportCard_marked_on">
+            <span>28-09-2022</span>
+            <span>7:45:24 Pm</span>
+          </div>
+          <div className="reportCard_edit">
+            {/* <span>
                 <TbEdit className="icon" />
               </span> */}
-              <TbEdit className="icon" />
+            <TbEdit className="icon" />
 
-              <span>Edit</span>
-            </div>
+            <span>Edit</span>
           </div>
         </div>
+      </div>
     </div>
   )
 }

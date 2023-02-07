@@ -18,6 +18,7 @@ import Navbar from '../components/Navbar';
 const Router = () => {
 
     const [isLoading, setisLoading] = useState(true);
+    const [navbarTitle, setNavbarTitle] = useState('');
 
     useEffect(() => {
         setisLoading(false)
@@ -40,10 +41,10 @@ const Router = () => {
                     :
                     <BrowserRouter>
                         <div className='router_sidebar'>
-                            <Sidebar />
+                            <Sidebar setNavbarTitle={setNavbarTitle} navbarTitle={navbarTitle} />
                         </div>
                         <div className='router_routes'>
-                            <Navbar />
+                            <Navbar setNavbarTitle={setNavbarTitle} navbarTitle={navbarTitle} />
                             <Routes>
                                 <Route path="/coursesoutline" element={<Courseoutline />} />
                                 <Route path="/notes" element={<Notes />} />

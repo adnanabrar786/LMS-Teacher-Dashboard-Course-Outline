@@ -7,3 +7,8 @@ npm install react-icons --save
 Toggle divs without using Javascript  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 14)
 https://stackoverflow.com/questions/11023816/toggle-divs-without-using-javascript
+
+
+
+How to set dynamic Title in NavBar
+https://stackoverflow.com/questions/73225912/how-to-set-dynamic-title-in-navbar

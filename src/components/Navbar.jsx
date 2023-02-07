@@ -4,42 +4,32 @@ import { BiBell } from 'react-icons/bi';
 import teacherimg from "./asserts/teacherimg.png";
 // import { useParams } from 'react-router-dom';
 
-import { useSearchParams } from 'react-router-dom';
+// import { useSearchParams } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({navbarTitle}) => {
 
   // const [searchParams, setSearchParams] = useSearchParams();
-  const [searchParams] = useSearchParams();
+  // const [searchParams] = useSearchParams();
 
-  const coureOutline = searchParams.get('title');
-  const notes = searchParams.get('notes');
-  const assignments = searchParams.get('assignments');
-  const assignmentSubmission = searchParams.get('assignmentsubmission');
-  const quizzes = searchParams.get('quizzes');
-  const quizzSubmission = searchParams.get('quizzsubmission');
-  const paper = searchParams.get('paper');
-  const papersubmisson = searchParams.get('papersubmisson');
-  const reportCard = searchParams.get('reportCard');
+  // const coureOutline = searchParams.get('title');
+  // const notes = searchParams.get('notes');
+  // const assignments = searchParams.get('assignments');
+  // const assignmentSubmission = searchParams.get('assignmentsubmission');
+  // const quizzes = searchParams.get('quizzes');
+  // const quizzSubmission = searchParams.get('quizzsubmission');
+  // const paper = searchParams.get('paper');
+  // const papersubmisson = searchParams.get('papersubmisson');
+  // const reportCard = searchParams.get('reportCard');
 
-
-  // const {
-  //   // course, outline,
-  //   // assignment, submission, 
-  //   // notes,
-  //   //  assignments,
-  //   // quizzes, 
-  //   // quizz, 
-  //   // papers, paper, submisson,
-  //   // report, card 
-  // } = useParams();
 
   return (
     <>
       <nav>
         <div>
           <span className='heading'>
-            {coureOutline} {notes} {assignments} {assignmentSubmission} {quizzes} {quizzSubmission}
-            {reportCard} {paper} {papersubmisson}
+            {/* {coureOutline} {notes} {assignments} {assignmentSubmission} {quizzes} {quizzSubmission}
+            {reportCard} {paper} {papersubmisson} */}
+            {navbarTitle}
           </span>
           {/* <span className='heading'>
             {course} {outline}

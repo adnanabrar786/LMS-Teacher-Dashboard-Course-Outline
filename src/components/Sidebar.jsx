@@ -3,7 +3,7 @@ import "../styles/components/sidebar.scss";
 import { NavLink } from 'react-router-dom';
 import { SlArrowDown, SlArrowUp } from 'react-icons/sl';
 
-const Sidebar = () => {
+const Sidebar = ({setNavbarTitle }) => {
 
     const [hide, sethide] = useState(0);
 
@@ -22,12 +22,12 @@ const Sidebar = () => {
             </div>
             <div className='center'>
                 <ul>
-                    <NavLink to="/coursesoutline/?title=Course Outline" className='link' activeclassname="active">
+                    <NavLink onClick={() => setNavbarTitle("Course Outline")} to="/coursesoutline" className='link' activeclassname="active">
                         <li>
                             Course Outline
                         </li>
                     </NavLink>
-                    <NavLink to="/notes/?notes=Notes" className='link' activeclassname="active">
+                    <NavLink onClick={() => setNavbarTitle("Notes")} to="/notes" className='link' activeclassname="active">
                         <li>
                             Notes
                         </li>
@@ -49,10 +49,10 @@ const Sidebar = () => {
                                     ? "accordion_content show"
                                     : "accordion_content"
                             }>
-                                <NavLink to="/assignments/?assignments=Assignments" className='link' activeclassname="active">
+                                <NavLink onClick={() => setNavbarTitle("Assignments")} to="/assignments" className='link' activeclassname="active">
                                     Assignments
                                 </NavLink>
-                                <NavLink to="/assignmentsubmission/?assignmentsubmission=Assignment Submisson" className='link' activeclassname="active">
+                                <NavLink onClick={() => setNavbarTitle("Assignment Submission")} to="/assignmentsubmission" className='link' activeclassname="active">
                                     Assignment Submission
                                 </NavLink>
                             </div>
@@ -75,10 +75,10 @@ const Sidebar = () => {
                                     ? "accordion_content show"
                                     : "accordion_content"
                             }>
-                                <NavLink to="/quizzes/?quizzes=Quizzes" className='link' activeclassname="active">
+                                <NavLink onClick={() => setNavbarTitle("Quizzes")}  to="/quizzes" className='link' activeclassname="active">
                                     Quizzes
                                 </NavLink>
-                                <NavLink to="/quizzsubmission/?quizzsubmission=Quizz Submission" className='link' activeclassname="active">
+                                <NavLink onClick={() => setNavbarTitle("Quizz Submission")}  to="/quizzsubmission" className='link' activeclassname="active">
                                     Quizz Submission
                                 </NavLink>
                             </div>
@@ -101,17 +101,17 @@ const Sidebar = () => {
                                     ? "accordion_content show"
                                     : "accordion_content"
                             }>
-                                <NavLink to="/papers/?paper=Papers" className='link accordion_content_link' activeclassname="active">
+                                <NavLink onClick={() => setNavbarTitle("Papers")} to="/papers" className='link accordion_content_link' activeclassname="active">
                                     Papers
                                 </NavLink>
-                                <NavLink to="/papersubmisson/?papersubmisson=Paper Submission" className='link' activeclassname="active">
+                                <NavLink onClick={() => setNavbarTitle("Paper Submission")} to="/papersubmisson" className='link' activeclassname="active">
                                     Paper Submission
                                 </NavLink>
                             </div>
                         </div>
                     </div>
 
-                    <NavLink to="/reportcard/?reportCard=Report Card" className='link' activeclassname="active">
+                    <NavLink onClick={() => setNavbarTitle("Report Card")} to="/reportcard" className='link' activeclassname="active">
                         <li>
                             Report Card
                         </li>

@@ -44,7 +44,6 @@ const Notes = () => {
         <div>Action</div>
       </div>
 
-
       <div className="notes_middle_wrapper">
         <div className="notes_middle_one_div">
           <div className="lecture_file">Lecture name</div>
@@ -60,7 +59,7 @@ const Notes = () => {
           </div>
         </div>
       </div>
-          </div>
+    </div>
   )
 }
 

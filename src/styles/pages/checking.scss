@@ -1,11 +1,184 @@
 @import "../variable.scss";
 
 .checking_wrapper {
-    height: 100vh;
+    height: 91vh;
+    // padding-left: 15px;
+    width: auto;
+    display: flex;
+    .checking_center_wrapper {
+        width: 75%;
+        .checking_center_header_wrapper {
+            height: 18vh;
+            background-color: $white;
+            .checking_center_header_container {
+                padding-left: 15px;
+                width: 97%;
+                display: flex;
+                .course_details_wrapper {
+                    width: 50%;
+                    div {
+                        padding-top: 15px;
+                        display: flex;
+                        justify-content: space-around;
 
-    .checking_container {
-        height: 89vh;
-        padding-left: 15px;
-        width: 97%;
+                        span {
+                            width: 47%;
+                            font-size: 16px;
+                        }
+                        .bold {
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .student_name_wrapper {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    .student_name {
+                        padding: 7px 0px;
+                        width: 65%;
+                        text-align: center;
+                        font-weight: 500;
+                        border-radius: 4px;
+                        background-color: rgba(237, 237, 237, 1);
+                    }
+                    .arrow_red_circle {
+                        background-color: $red;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        .icon {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .checking_center_feature_wrapper {
+            height: 60px;
+            background-color: aqua;
+        }
+        .checking_center_notepad_wrapper {
+            height: 55.2vh;
+            background-color: pink;
+        }
+        .button_wrapper {
+            height: 10vh;
+            .button_container {
+                height: 10vh;
+                padding-left: 15px;
+                width: 97%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                div {
+                    span {
+                        margin-left: 3px;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    input{
+                       cursor: pointer;
+                    }
+                    button {
+                        margin: 0px 3px;
+                        padding: 9px 13px;
+                        height: 40px;
+                        font-weight: 500;
+                        border: none;
+                        background-color: $grey;
+                        color: #6a6a6a;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+
+                    .red_btn {
+                        background-color: #f44336;
+                        color: #f6f7fb;
+                    }
+                    .grey_btn {
+                        background-color: $grey;
+                        color: #6a6a6a;
+                    }
+                }
+            }
+        }
+    }
+    .checking_right_wrapper {
+        width: 25%;
+        background-color: $white;
+        border-left: 1px solid $grey;
+        .checking_right_container {
+            padding-left: 10px;
+            width: 90%;
+            .heading {
+                font-size: 19px;
+                text-align: center;
+            }
+            .margin_top {
+                margin-top: 10px;
+            }
+            ._sub_heading {
+                display: flex;
+                justify-content: space-between;
+                span {
+                    width: 45%;
+                    font-size: 15px;
+                }
+                ._sub_heading_bold {
+                    font-weight: 600;
+                }
+                ._sub_heading_not_bold {
+                    color: $red;
+                }
+            }
+
+            .grade_wrapper {
+                width: 100%;
+                h4 {
+                    margin-bottom: 8px;
+                    span {
+                        color: rgba(106, 106, 106, 1);
+                        font-size: 13px;
+                    }
+                }
+                input {
+                    width: 80%;
+                    padding: 7px 4px;
+                    outline: none;
+                    border: 1px solid $grey;
+                    border-radius: 4px;
+                }
+            }
+
+            .gradebook_wrapper {
+                width: 100%;
+                h4 {
+                    margin-bottom: 8px;
+                    span {
+                        color: rgba(106, 106, 106, 1);
+                        font-size: 13px;
+                    }
+                }
+                p {
+                    width: 80%;
+                    margin-left: 4px;
+                    color: rgba(106, 106, 106, 1);
+                    font-weight: 600;
+                }
+            }
+
+            .feedback_wrapper {
+                div {
+                    background-color: aqua;
+                    height: 40vh;
+                }
+            }
+        }
     }
 }
